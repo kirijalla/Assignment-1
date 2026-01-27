@@ -12,3 +12,4 @@ C:\Users\andre\OneDrive\Escritorio\AP4\Assignment1\Assignment1\obj\Debug\net10.0
 C:\Users\andre\OneDrive\Escritorio\AP4\Assignment1\Assignment1\obj\Debug\net10.0\Assignment1.pdb
 C:\Users\andre\OneDrive\Escritorio\AP4\Assignment1\Assignment1\obj\Debug\net10.0\Assignment1.genruntimeconfig.cache
 C:\Users\andre\OneDrive\Escritorio\AP4\Assignment1\Assignment1\obj\Debug\net10.0\ref\Assignment1.dll
+C:\Users\andre\OneDrive\Escritorio\AP4\Assignment1\Assignment1\obj\Debug\net10.0\Assignment1.sourcelink.json

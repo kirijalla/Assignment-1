@@ -1,10 +1,15 @@
-﻿namespace Assignment1
+﻿using System.Runtime.Intrinsics.Arm;
+
+namespace Assignment1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Computer c1 = new Computer("sam","123",1234343,10000);
+            Computer c1 = new Computer("HP","Omnibook",211223,1600);
+            Computer c2 = new Computer("sam","123",1234343,10000);
+            Console.WriteLine(c1);
+
         }
     }
 
@@ -15,12 +20,14 @@
         private long serialnumber;
         private double price;
 
-        public Computer(string br, string m, long sn, double pr)
+        private static int NumberOfCreatedComputer = 0;
+
+        public Computer(string brand, string model, long serialnumber, double price)
         {
-            br = brand;
-            m = model;
-            sn = serialnumber;
-            pr = price;
+            this.brand = brand;
+            this.model = model;
+            this.serialnumber = serialnumber;
+            this.price = price;
         }
 
         //getters
@@ -46,5 +53,13 @@
         {
             this.price = price;
         }
+
+        public override string? ToString()
+        {
+            return $"Brand: {brand}\nModel: {model}\nSN: {serialnumber}\nPrice: {price}";
+        }
+
+        public static int findNumberOFCreatedComputer()
+        { return NumberOfCreatedComputer; }
     }
 }
