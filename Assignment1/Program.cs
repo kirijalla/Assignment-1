@@ -6,10 +6,53 @@ namespace Assignment1
     {
         static void Main(string[] args)
         {
-            Computer c1 = new Computer("HP","Omnibook",211223,1600);
-            Computer c2 = new Computer("sam","123",1234343,10000);
-            Console.WriteLine(c1);
+            Console.WriteLine("Welcome to my computer store: ");
+            Console.WriteLine("Enter maximum number of computers: ");
+            int maxComputers = int.Parse(Console.ReadLine());
 
+            Computer[] inventory = new Computer[maxComputers];
+
+            int choice;
+
+            do {
+                DisplayMenu();
+                choice = GetMenuChoice();
+
+                switch (choice)
+                { 
+                
+                }
+            
+            } while (choice != 5);
+
+
+            //Computer c1 = new Computer("HP","Omnibook",211223,1600);
+            //Computer c2 = new Computer("sam","123",1234343,10000);
+            //Console.WriteLine(c1);
+
+        }
+
+        public static void DisplayMenu() 
+        {
+            Console.WriteLine("Main Menu: ");
+            Console.WriteLine("1. Enter new computer");
+            Console.WriteLine("2. Update computer");
+            Console.WriteLine("3. Find computer by brand");
+            Console.WriteLine("4. Find computer cheaper than a price");
+            Console.WriteLine("5. Exit ");
+
+        }
+
+        public static int GetMenuChoice()
+        {
+            int choice;
+            do
+            {
+                Console.WriteLine("Enter your Choice[1-5] :");
+                choice = int.Parse(Console.ReadLine());
+            } while (choice < 1 || choice > 5);
+
+            return choice;
         }
     }
 
