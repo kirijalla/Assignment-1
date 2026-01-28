@@ -5,6 +5,7 @@ namespace Assignment1
 {
     internal class Program
     {
+        //comment
         private const string password = "password";
 
         private static Computer[] inventory = Array.Empty<Computer>();
